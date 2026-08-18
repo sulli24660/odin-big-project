@@ -1,0 +1,158 @@
+body {
+    background-color: #f9f9fa;
+    margin: 0; /* Supprime la marge par défaut du navigateur */
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 36px;
+    color: white;
+    background-color: #1F2937;
+}
+
+.bloc-banner {
+    background-color: #1F2937;
+    display: flex;
+    align-items: center; /* Aligne le texte et l'image verticalement */
+    justify-content: space-between;
+    padding: 36px; /* Remplace padding-left pour équilibrer l'espace */
+    gap: 32px; /* Crée un espace propre entre le texte et l'image */
+}
+
+.banner-content {
+    max-width: 500px; /* Empêche le texte de s'étaler sur toute la largeur */
+}
+
+h1 {
+    color: white;
+    font-size: 48px;
+    margin: 0 0 8px 0; /* Supprime le padding inutile et gère l'espace sous le titre */
+}
+
+p {
+    color: #b8babc; /* Blanc légèrement atténué pour le sous-titre */
+    font-size: 14px;
+    font-style: italic;
+    margin: 0;
+}
+
+.banner-img {
+    width: 400px;
+    height: 200px;
+    border: 2px solid white; /* Syntaxe correcte pour la bordure */
+    color: white;
+    background-color: #8a99b5; /* Fond gris temporaire pour visualiser le bloc */
+    
+    /* Centrage du texte à l'intérieur du bloc image */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button{
+    background-color: #3882F6;
+    color: white;
+    border-radius: 2px;
+    font-size: 12px;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+}
+.nav-links a{
+    text-decoration: none; /* Supprime le soulignement */
+    color: white;          /* Conserve la couleur du texte souhaitée */
+    font-size: small;
+    padding: 8px;
+    flex-shrink: 0;
+    margin-left: auto;
+}
+.banner-content-2{
+    text-align: center;
+    padding: 32px;
+    display: flex;
+    flex-direction: column; /* Empile le titre au-dessus des images */
+    align-items: center;
+    gap: 32px;              /* Espace entre le titre et les images */
+}
+.banner-2{
+        background-color: rgb(247, 249, 249);}
+
+.banner-img-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 900px; /* Limite la largeur totale pour éviter que les images ne s'étalent trop */
+}
+
+.banner-img-2 img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover; /* Conserve les proportions de l'image sans la déformer */
+}
+.banner-3{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(184, 184, 184);
+}
+.temoignage {
+    padding: 36px;
+    margin: 70px;
+}
+.quote {
+    color: #64686c;
+    padding:8px;
+    font-weight: 300;
+    font-size: 16px;
+}
+.author {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    color: black;
+    text-align: right;
+}
+.banner-4
+{   background-color: #3882F6;
+    padding: 48px 48px;
+    margin: 80px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;}
+.cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cta-title {
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    color: #fbfcfc;
+    font-style: normal;
+    gap: 8px;
+
+}
+.cta-text{
+    font-weight: 100;
+    color: #f9f9fa;
+    font-size: 12px;
+    gap: 8px;
+}
+.cta-button{
+    color: #fbfcfc;
+    background-color: #3882F6;
+    border:solid white;
+    font-weight: 100;
+    margin-left: auto;
+    border-radius: 3px;
+    justify-content: center;
+}
+footer{
+    background-color: #1F2937;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    font-size: small;
+}
