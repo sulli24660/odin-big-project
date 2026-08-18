@@ -79,18 +79,35 @@ button{
 .banner-2{
         background-color: rgb(247, 249, 249);}
 
+/* Alignement des 4 cartes sur la ligne */
 .banner-img-2 {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    max-width: 900px; /* Limite la largeur totale pour éviter que les images ne s'étalent trop */
+    justify-content: space-around;
+    align-items: flex-start; /* Aligne le haut des cartes */
+    gap: 16px;
 }
 
-.banner-img-2 img {
+/* Style de chaque carte (Image + Texte au-dessus/en-dessous) */
+.img-card {
+    display: flex;
+    flex-direction: column; /* Empile l'image et le texte verticalement */
+    align-items: center;    /* Centre l'image et le texte l'un par rapport à l'autre */
+    max-width: 150px;       /* Limite la largeur du bloc texte */
+    text-align: center;
+
+}
+
+.img-card img {
     width: 100px;
     height: 100px;
-    object-fit: cover; /* Conserve les proportions de l'image sans la déformer */
+    object-fit: cover;
+}
+
+.img-card p {
+    margin-top: 4px;
+    color: #b0b8ca;
+    font-family: "Roboto", sans-serif;
+    font-size: 8px;
 }
 .banner-3{
     display: flex;
@@ -131,7 +148,7 @@ button{
     font-weight: 600;
     color: #fbfcfc;
     font-style: normal;
-    gap: 8px;
+    margin-bottom: 8px;
 
 }
 .cta-text{
@@ -147,7 +164,7 @@ button{
     font-weight: 100;
     margin-left: auto;
     border-radius: 3px;
-    justify-content: center;
+    padding: 4px 8px;
 }
 footer{
     background-color: #1F2937;
@@ -155,4 +172,14 @@ footer{
     text-align: center;
     padding: 16px;
     font-size: small;
+}
+.credits {
+    font-size: 12px;
+    color: #9CA3AF;
+    margin-top: 4px;
+}
+
+.credits a {
+    color: #9CA3AF;
+    text-decoration: underline;
 }
